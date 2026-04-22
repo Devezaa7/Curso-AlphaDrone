@@ -1,9 +1,6 @@
 export default function Footer() {
   return (
     <footer>
-      <div style={{ fontFamily: 'Barlow Condensed', fontSize: '1.8rem', fontWeight: 900, letterSpacing: '0.1em', marginBottom: '0.5rem' }}>
-        ALPHA <span className="orange">DRONE</span>
-      </div>
       <p style={{ color: 'var(--gray)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
         Formando pilotos com segurança e confiança.
       </p>

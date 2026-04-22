@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap');
 
 :root {
-  --navy: #0d1b2e;
-  --navy-light: #162440;
-  --orange: #e87d2b;
-  --orange-light: #f59240;
+  --navy: #1a0f2e;
+  --navy-light: #2a1a45;
+  --orange: #9b6dbd;
+  --orange-light: #b88fd4;
   --white: #ffffff;
-  --gray: #a0aec0;
+  --gray: #c4b8d4;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
