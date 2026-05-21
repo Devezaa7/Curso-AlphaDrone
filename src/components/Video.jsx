@@ -1,5 +1,5 @@
 export default function Video() {
-  const videoId = "XXXXXXXXXXX"
+  const videoId = "oLennHpllTQ"
 
   return (
     <section id="video" style={{ padding: '6rem 0', background: 'var(--navy)' }}>
