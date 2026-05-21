@@ -32,8 +32,8 @@ export default function Instrutores() {
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <span className="section-tag">Quem vai te ensinar</span>
           <h2 className="section-title">
-            NOSSOS<br />
-            <span className="orange">INSTRUTORES</span>
+            Nossos<br />
+            <span className="orange">instrutores</span>
           </h2>
           <div className="orange-line" style={{ margin: '1rem auto' }} />
         </div>
@@ -44,7 +44,7 @@ export default function Instrutores() {
               <div className="instrutor-avatar" style={{ overflow: 'hidden', background: 'none', padding: 0 }}>
                 <img src={inst.foto} alt={inst.nome} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
               </div>
-              <h3 style={{ fontFamily: 'Barlow Condensed', fontSize: '1.4rem', fontWeight: 800, textTransform: 'uppercase', marginBottom: '0.3rem' }}>
+              <h3 style={{ fontFamily: 'Barlow Condensed', fontSize: '1.4rem', fontWeight: 800, marginBottom: '0.3rem' }}>
                 {inst.nome}
               </h3>
               <div style={{ color: 'var(--orange)', fontSize: '0.85rem', fontWeight: 600, marginBottom: '1rem' }}>

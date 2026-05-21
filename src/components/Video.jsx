@@ -1,7 +1,4 @@
 export default function Video() {
-  // SUBSTITUIR: cole aqui o ID do vídeo do YouTube
-  // Exemplo: se o link for https://youtube.com/watch?v=XXXXXXXXXXX
-  // coloque videoId = "XXXXXXXXXXX"
   const videoId = "XXXXXXXXXXX"
 
   return (
@@ -10,8 +7,8 @@ export default function Video() {
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <span className="section-tag">Conheça o curso</span>
           <h2 className="section-title">
-            ASSISTA ANTES<br />
-            DE <span className="orange">COMPRAR</span>
+            Assista antes<br />
+            de <span className="orange">comprar</span>
           </h2>
           <div className="orange-line" style={{ margin: '1rem auto' }} />
         </div>

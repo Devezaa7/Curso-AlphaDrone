@@ -7,9 +7,9 @@ export default function Hero() {
         <div style={{ maxWidth: 720 }}>
           <span className="section-tag animate-fade-up">Alpha Drone — Escola de Pilotos</span>
           <h1 className="section-title animate-fade-up delay-1" style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', marginBottom: '1.5rem' }}>
-            APRENDA A<br />
-            VOAR COM<br />
-            <span className="orange">CONFIANÇA</span>
+            Aprenda a<br />
+            voar com<br />
+            <span className="orange">confiança</span>
           </h1>
           <p className="animate-fade-up delay-2" style={{
             color: 'var(--gray)',
@@ -18,17 +18,14 @@ export default function Hero() {
             maxWidth: 520,
             marginBottom: '2.5rem'
           }}>
-            {/* SUBSTITUIR: Descrição curta e impactante do curso */}
             Do zero ao voo: aprenda legislação, regulamentação e pilotagem de drones com quem vive isso na prática.
           </p>
           <div className="animate-fade-up delay-3" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <a href="#cursos" className="btn-orange">VER OS CURSOS</a>
-            <a href="#video" className="btn-outline">ASSISTIR APRESENTAÇÃO</a>
+            <a href="#cursos" className="btn-orange">Ver os cursos</a>
+            <a href="#video" className="btn-outline">Assistir apresentação</a>
           </div>
         </div>
       </div>
-
-      {/* Elemento decorativo */}
       <div style={{
         position: 'absolute',
         right: '-5%',

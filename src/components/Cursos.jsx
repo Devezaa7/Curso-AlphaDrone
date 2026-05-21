@@ -1,7 +1,7 @@
 const cursos = [
   {
     tipo: 'EAD',
-    badge: 'ONLINE',
+    badge: 'Online',
     titulo: 'Curso de Drone EAD',
     descricao: 'Aprenda no seu ritmo com acesso à apostila completa sobre legislação, regulamentação e teoria de drones.',
     preco: 'R$ 379,00',
@@ -12,13 +12,13 @@ const cursos = [
       'Teoria de pilotagem',
       'Certificado de conclusão',
     ],
-    link: 'https://kiwify.com.br/LINK-EAD', // SUBSTITUIR
-    cta: 'QUERO O CURSO EAD',
+    link:'https://pay.kiwify.com.br/MZtSm85',
+    cta: 'Quero o curso EAD',
     destaque: false,
   },
   {
-    tipo: 'SEMI PRESENCIAL',
-    badge: 'MAIS COMPLETO',
+    tipo: 'Semi Presencial',
+    badge: 'Mais completo',
     titulo: 'Curso de Drone Semi Presencial',
     descricao: 'Teoria online + prática presencial com drone. O caminho mais completo para se tornar um piloto confiante.',
     preco: 'R$ 879,00',
@@ -29,8 +29,8 @@ const cursos = [
       'Acompanhamento via grupo no WhatsApp',
       'Certificado de conclusão',
     ],
-    link: 'https://kiwify.com.br/LINK-SEMI', // SUBSTITUIR
-    cta: 'QUERO O CURSO COMPLETO',
+    link: 'https://pay.kiwify.com.br/9AYEQej',
+    cta: 'Quero o curso completo',
     destaque: true,
   },
 ]
@@ -42,8 +42,8 @@ export default function Cursos() {
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <span className="section-tag">Escolha seu curso</span>
           <h2 className="section-title">
-            DUAS FORMAS DE<br />
-            <span className="orange">APRENDER</span>
+            Duas formas de<br />
+            <span className="orange">aprender</span>
           </h2>
           <div className="orange-line" style={{ margin: '1rem auto' }} />
         </div>
@@ -52,13 +52,13 @@ export default function Cursos() {
           {cursos.map((curso, i) => (
             <div key={i} className="curso-card" style={curso.destaque ? { borderColor: 'var(--orange)' } : {}}>
               {curso.destaque && (
-                <div style={{ background: 'var(--orange)', textAlign: 'center', padding: '0.4rem', fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.15em' }}>
-                  ⭐ RECOMENDADO
+                <div style={{ background: 'var(--orange)', textAlign: 'center', padding: '0.4rem', fontFamily: 'Barlow Condensed', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.05em' }}>
+                  ⭐ Recomendado
                 </div>
               )}
               <div style={{ padding: '2rem' }}>
                 <span className="badge">{curso.badge}</span>
-                <h3 style={{ fontFamily: 'Barlow Condensed', fontSize: '1.6rem', fontWeight: 800, marginBottom: '1rem', textTransform: 'uppercase' }}>
+                <h3 style={{ fontFamily: 'Barlow Condensed', fontSize: '1.6rem', fontWeight: 800, marginBottom: '1rem' }}>
                   {curso.titulo}
                 </h3>
                 <p style={{ color: 'var(--gray)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
