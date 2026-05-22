@@ -4,10 +4,10 @@
 :root {
   --navy: #1a0f2e;
   --navy-light: #2a1a45;
-  --orange: #e87d2b;
-  --orange-light: #f09348;
+  --orange: #9b6dbd;
+  --orange-light: #b88fd4;
   --white: #ffffff;
-  --gray: #a0aec0;
+  --gray: #c4b8d4;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -283,8 +283,6 @@ footer {
   .instrutor-card { padding: 1.5rem; }
 
   section { padding: 4rem 0 !important; }
-
-  .curso-card .badge { font-size: 0.75rem; }
 }
 
 /* MOBILE (até 480px) */
