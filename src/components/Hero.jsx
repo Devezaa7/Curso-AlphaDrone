@@ -5,7 +5,6 @@ export default function Hero() {
       <div className="hero-grid" />
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ maxWidth: 720 }}>
-          <span className="section-tag animate-fade-up">Alpha Drone — Escola de Pilotos</span>
           <h1 className="section-title animate-fade-up delay-1" style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', marginBottom: '1.5rem' }}>
             Aprenda a<br />
             voar com<br />
