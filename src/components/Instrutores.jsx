@@ -61,7 +61,9 @@ export default function Instrutores() {
                   <div style={{ fontSize: '0.75rem', color: 'var(--gray)', marginBottom: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Certificações</div>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center' }}>
                     {inst.certificados.map((cert, j) => (
-                      <img key={j} src={cert} alt={`Certificado ${j + 1}`} style={{ width: '60px', height: '60px', objectFit: 'contain', borderRadius: 4, border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.05)' }} />
+                      <div key={j} style={{ width: '60px', height: '60px', borderRadius: 4, border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                        <img src={cert} alt={`Certificado ${j + 1}`} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '4px' }} />
+                      </div>
                     ))}
                   </div>
                 </div>
