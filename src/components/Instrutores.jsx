@@ -5,7 +5,7 @@ const instrutores = [
     especialidade: 'Fotografia, Filmagem e Pilotagem',
     bio: 'Fotógrafo e videomaker desde 2020, com experiência em eventos esportivos como a Maratona do Rio e trabalhos para marcas como Nike, Olympikus e Hering. Instrutor de drone no Senac RJ desde 2023 e na MyView desde 2025.',
     experiencia: '+70 turmas • +1.500h de aula',
-    certificado: null,
+    certificados: [],
   },
   {
     foto: '/Flavio.jpeg',
@@ -13,7 +13,7 @@ const instrutores = [
     especialidade: 'Operação, Mapeamento e Inspeção',
     bio: 'Formado em Logística, Mecatrônica e Telecomunicações. 8 anos de atuação com drones, com especializações em termografia, aeroinspeção, mapeamento e pilotagem em plataforma em instituições como Senac, Senar e Drone Plus.',
     experiencia: '8 anos de experiência',
-    certificado: '/CertificadoDahua.jpeg',
+    certificados: ['/CertificadoDahua.jpeg', '/certificadoF.jpeg', '/certificadoF1.jpeg', '/certificadoF2.jpeg', '/certificadoF3.jpeg'],
   },
   {
     foto: '/Jhon.jpeg',
@@ -21,9 +21,7 @@ const instrutores = [
     especialidade: 'Drone Offshore, FPV e Eventos',
     bio: 'Eletrotécnico de formação, piloto de drone na área offshore desde 2022. Especialista em drones estabilizados e FPV, com atuação em casamentos, eventos ao ar livre e inspeções em plataformas e navios de petróleo.',
     experiencia: 'Piloto Offshore • CAAR • Aeroinspeção',
-    certificado: null,
-  },
-]
+    certificados: [],
 
 export default function Instrutores() {
   return (
@@ -56,10 +54,14 @@ export default function Instrutores() {
               <div style={{ background: 'rgba(232,125,43,0.1)', border: '1px solid rgba(232,125,43,0.2)', padding: '0.5rem 1rem', fontSize: '0.85rem', color: 'var(--orange)' }}>
                 {inst.experiencia}
               </div>
-              {inst.certificado && (
+              {inst.certificados && inst.certificados.length > 0 && (
                 <div style={{ marginTop: '1rem' }}>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--gray)', marginBottom: '0.4rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Certificação</div>
-                  <img src={inst.certificado} alt="Certificado" style={{ width: '70px', objectFit: 'contain', borderRadius: 4, border: '1px solid rgba(255,255,255,0.1)' }} />
+                  <div style={{ fontSize: '0.75rem', color: 'var(--gray)', marginBottom: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Certificações</div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center' }}>
+                    {inst.certificados.map((cert, j) => (
+                      <img key={j} src={cert} alt={`Certificado ${j + 1}`} style={{ width: '60px', height: '60px', objectFit: 'contain', borderRadius: 4, border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.05)' }} />
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
