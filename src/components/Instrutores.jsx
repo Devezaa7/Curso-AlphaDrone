@@ -22,6 +22,8 @@ const instrutores = [
     bio: 'Eletrotécnico de formação, piloto de drone na área offshore desde 2022. Especialista em drones estabilizados e FPV, com atuação em casamentos, eventos ao ar livre e inspeções em plataformas e navios de petróleo.',
     experiencia: 'Piloto Offshore • CAAR • Aeroinspeção',
     certificados: [],
+  },
+]
 
 export default function Instrutores() {
   return (
